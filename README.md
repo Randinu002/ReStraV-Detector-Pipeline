@@ -68,6 +68,17 @@ This pipeline is designed to work with large datasets. To get a good result, you
 
 ---
 
+---
+
+## ⚠️ A Note on Training (Proof-of-Concept)
+
+This pipeline was trained as a proof-of-concept on a very small, publicly available dataset to demonstrate that the code is functional.
+
+* **Dataset Used:** [REAL/AI VIDEO DATASET on Kaggle](https://www.kaggle.com/datasets/kanzeus/realai-video-dataset) (66 videos total)
+* **Result:** Due to the extremely small size of this dataset, the model **overfits** significantly. While training accuracy is high, the validation accuracy is low (around **64-68%**).
+
+This is the expected outcome for a "toy" dataset. It successfully demonstrates that the **end-to-end pipeline works correctly**, but it also confirms the paper's conclusion that a much larger, balanced dataset (e.g., 50,000+ videos) is essential to build a truly robust and general-purpose detector.
+
 ## 📄 Credit
 
 This project is a reproduction based on the following paper:
